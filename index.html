@@ -11,14 +11,20 @@
     family=Alfa+Slab+One|Open+Sans" rel="stylesheet">
   </head>
   <header>
-    <h1>Links<span></span></h1>
-    <nav>
-        <ul>
-          <li><a href="https://www.google.com/" target="_blank">Video demo I</a></li>
-          <li><a href="https://www.google.com/" target="_blank">Video demo II</a></li>
-          <li><a href="https://www.google.com/" target="_blank">Final report</a></li>
-        </ul>
-    </nav>
+    <ul>
+      <h1>Links</h1>
+      <li>
+        <nav>
+            <ul>
+              <li><a href="https://www.google.com/" target="_blank">Video demo I</a></li>
+              <li><a href="https://www.google.com/" target="_blank">Video demo II</a></li>
+              <li><a href="https://www.google.com/" target="_blank">Final report</a></li>
+            </ul>
+        </nav>
+      </li>
+    </ul>  
+    </header>  
+    </header>  
   </header>
 </html>
 
@@ -28,7 +34,7 @@
     
     <div class="team_member">
       <h1>Waht is rePhoto?</h1>
-      <p>rePhoto is a citizen science web application designed to create a simpler environment for users to take repeat photography of a subject. 
+      <p class="about">rePhoto is a citizen science web application designed to create a simpler environment for users to take repeat photography of a subject. 
         This is done through rePhoto providing layered imagery such that the user can align their camera with the previous image of the current subject. 
         Furthermore, rePhoto allows users to create their own projects or to simply and easily find local projects or projects relevant to a user's interests 
         to contribute to.
@@ -38,7 +44,7 @@
     <div class="team_member">
 
       <h1>Waht is the purpose of rePhoto?</h1>
-      <p>
+      <p class="about">
         The core utility of Project rePhoto stems from its identity as a citizen science project which allows for a comprehensive visual timeline of change 
         for each project’s subject, granting researchers more time to spend on analytical work while citizens not directly involved with the research can 
         provide samples as they come across a project’s subject.
@@ -63,7 +69,7 @@
         <p class="role">Developer</p>
         <p>
           I will be graduating from GW in May/2022 with a Bachelor's Degree in Computer Science. 
-          I'm setting my career path in java backend development. In the summer of 2021, 
+          I'm setting my career path in Java backend development. In the summer of 2021, 
           I worked at Goldman Sachs as a backend developer intern for the core engineering team in Dallas, TX. 
           Upon graduation in July 2022, I will join VMware as a New Graduate - Member of Technical Staff at Pal Alto, CA.
         </p>
@@ -104,15 +110,24 @@ body{
 }
 
 .wrapper{
-  margin-top: 50px;
+  margin-top: 0;
 }
 
 .wrapper h1{
   font-family: 'Allura', cursive;
   font-size: 52px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-align: center;
 }
+
+p.about{
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
 
 .team{
   display: flex;
@@ -125,7 +140,7 @@ body{
 .team .team_member{
   background: #fff;
   margin: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   width: 300px;
   padding: 20px;
   line-height: 20px;
@@ -136,7 +151,7 @@ body{
 .team .team_member h3{
   color: #81c644;
   font-size: 26px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .team .team_member p.role{
