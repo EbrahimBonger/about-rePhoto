@@ -10,22 +10,19 @@
     <link href="https://fonts.googleapis.com/css?
     family=Alfa+Slab+One|Open+Sans" rel="stylesheet">
   </head>
-  <header>
-    <ul>
-      <h1>Links</h1>
-      <li>
-        <nav>
-            <ul>
-              <li><a href="https://www.google.com/" target="_blank">Video demo I</a></li>
-              <li><a href="https://www.google.com/" target="_blank">Video demo II</a></li>
-              <li><a href="https://www.google.com/" target="_blank">Final report</a></li>
-            </ul>
-        </nav>
-      </li>
-    </ul>  
-    </header>  
-    </header>  
-  </header>
+  <body>
+      <header>
+
+        <div class="dropdown">
+          <button class="dropbtn">Links</button>
+          <div class="dropdown-content">
+            <a href="https://www.google.com/" target="_blank">Video demo I</a>
+            <a href="https://www.google.com/" target="_blank">Video demo II</a>
+            <a href="https://www.google.com/" target="_blank">Final report</a>
+          </div>
+        </div>
+      </header>  
+    </body>
 </html>
 
 <div class="wrapper">
@@ -96,13 +93,49 @@
   <style>
       @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
   
-      
+
+
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 body{
   background: #81c644;
@@ -151,7 +184,7 @@ p.about{
 .team .team_member h3{
   color: #81c644;
   font-size: 26px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .team .team_member p.role{
